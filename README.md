@@ -6,7 +6,7 @@ This repository contains the source code used to create the Food recognition mod
  - Keras 2
  - Tensorflow(-gpu) >1.9.0
 
-The deep learning task utilises food images sourced from https://www.vision.ee.ethz.ch/datasets_extra/food-101/, and the image will need to split into test and training sets before the code can be executed.
+The deep learning task utilises food images sourced from https://www.vision.ee.ethz.ch/datasets_extra/food-101/, and the image will need to be split into test and training sets before the code can be executed.
 
 ## Usage
 
