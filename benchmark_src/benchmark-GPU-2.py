@@ -23,8 +23,9 @@ from math import ceil
 import sys
 
 num_gpus = 2
-batch_size = 64*num_gpus
+batch_size = 64 * num_gpus
 data_path = '/data/cephfs/punim0847/'
+num_processes = 24
 
 
 # Load part of dataset images (since I do not have enough memory) and resize to meet minimum width and height pixel size
@@ -138,7 +139,7 @@ def model_training(train, test, num_classes):
 if __name__ == '__main__':
     train_n = int(sys.argv[1])
     test_n = int(sys.argv[2])
-    num_processes = 24
+
     pool = mp.Pool(processes=num_processes)
 
     class_to_ix = {}

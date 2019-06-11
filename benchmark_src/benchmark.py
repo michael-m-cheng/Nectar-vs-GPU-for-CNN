@@ -22,6 +22,7 @@ from math import ceil
 import sys
 
 batch_size = 64
+num_processes = 8
 
 # Load part of dataset images (since I do not have enough memory) and resize to meet minimum width and height pixel size
 def load_images(root, img_num_limit, min_side=299):
@@ -132,7 +133,6 @@ def model_training(train, test, num_classes):
 if __name__ == '__main__':
     train_n = int(sys.argv[1])
     test_n = int(sys.argv[2])
-    num_processes = 8
     pool = mp.Pool(processes=num_processes)
 
     class_to_ix = {}
