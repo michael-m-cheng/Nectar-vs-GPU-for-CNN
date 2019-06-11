@@ -12,7 +12,7 @@ The deep learning task utilises food images sourced from https://www.vision.ee.e
 
 1. Extract the `food-101/images` contents into the benchmark_src directory
 2. Run `python3 split_data.py` to setup training and testing image directories in current directory
-3. Run `python3 <benchmark source>.py <num training samples> <num test samples>` to start training
+3. Run `python3 <source>.py <no. training samples> <no. test samples>` to start training
 
 *NOTE The source files have parameters that need to be changed to be run on your local machine For example:*
   - Data path (currently points to the Spartan project data directory)
